@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const string = 'Esto es un string';
 const numeros = 666;
@@ -12,11 +13,18 @@ const obj = {
 }
 // const PrimeraApp = ({saludo}) es la desestructuración de las props
 //const PrimeraApp = (props)
-const PrimeraApp = ({saludo = 'Hola Insecto, esto es una prop default'}) => {
+const PrimeraApp = ({
+  saludo = 'Hola Insecto, esto es una prop default',
+  otraPropiedad,
+  subtitulo }) => {
+
   console.log({saludo});
+
   return (
     <>
       <h1>{saludo}</h1>
+      <p>Otra propType tipo number: {otraPropiedad}</p>
+      <p>defaultProps: {subtitulo}</p>
       <p>Imprimir string: {string}</p>
       <p>Imprimir numeros: {numeros}</p>
       <p>Imprimir booleano: {booleano} no aparecen! 🙃</p>
@@ -26,6 +34,15 @@ const PrimeraApp = ({saludo = 'Hola Insecto, esto es una prop default'}) => {
     </>
   )
     
+}
+
+PrimeraApp.propTypes = {
+  saludo: PropTypes.string.isRequired,
+  otraPropiedad: PropTypes.number.isRequired
+}
+
+PrimeraApp.defaultProps = {
+  subtitulo: 'Soy un subtítulo!'
 }
 
 export default  PrimeraApp;

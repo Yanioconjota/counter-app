@@ -5,3 +5,18 @@ html, body {
   font-size: 1.3rem;
   padding: 70px;
 }
+
+hr {
+  margin: 2rem 0;
+  border: 1px solid #00ff2a;
+}
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #00ff2a;
+  padding: 10px 16px;
+  color: #00ff2a;
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
