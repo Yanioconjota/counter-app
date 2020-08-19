@@ -16,14 +16,14 @@ const CounterApp = ({value = 0}) => {
 
   const handleSubstract = () => setCounter(counter - 1);
 
-  const hanndleRest = () => setCounter(value);
+  const hanndleReset = () => setCounter(value);
 
   return (
     <>
       <h1>CounterApp</h1>
       <h2>{counter}</h2>
       <button onClick={handleAdd}>+1</button>
-      <button onClick={hanndleRest}>Reset</button>
+      <button onClick={hanndleReset}>Reset</button>
       <button onClick={handleSubstract}>-1</button>
     </>
   );
