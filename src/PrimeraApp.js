@@ -24,7 +24,7 @@ const PrimeraApp = ({
     <>
       <h1>{saludo}</h1>
       <p>Otra propType tipo number: {otraPropiedad}</p>
-      <p>defaultProps: {subtitulo}</p>
+      <p id="defaultProps">defaultProps: {subtitulo}</p>
       <p>Imprimir string: {string}</p>
       <p>Imprimir numeros: {numeros}</p>
       <p>Imprimir booleano: {booleano} no aparecen! 🙃</p>

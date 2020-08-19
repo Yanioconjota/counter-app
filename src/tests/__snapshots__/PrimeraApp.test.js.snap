@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <PrimeraApp/> Debe mostrar <PrimeraApp/> Correctamente 1`] = `
+<Fragment>
+  <h1>
+    Hola, soy Goku y estás leyendo esto con mi voz!
+  </h1>
+  <p>
+    Otra propType tipo number: 
+    666
+  </p>
+  <p
+    id="defaultProps"
+  >
+    defaultProps: 
+    Soy un subtítulo!
+  </p>
+  <p>
+    Imprimir string: 
+    Esto es un string
+  </p>
+  <p>
+    Imprimir numeros: 
+    666
+  </p>
+  <p>
+    Imprimir booleano: 
+    <Component />
+     no aparecen! 🙃
+  </p>
+  <p>
+    Imprimir arrays: 
+    🍲
+    🍔
+    🍟
+    🍕
+    🌭
+    🥪
+  </p>
+  <pre>
+    {
+    "nombre": "James",
+    "apellido": "Howlett",
+    "alias": "Wolverine",
+    "edad": "desconocida"
+}
+  </pre>
+  <p>
+    Párrafo común
+  </p>
+</Fragment>
+`;
